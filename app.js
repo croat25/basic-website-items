@@ -47,6 +47,6 @@ app.get("/campground/new",function(req,res){
     res.render("new.ejs");
 }); 
 
-app.listen(process.env.PORT, process.env.IP,function (){
+app.listen(process.env.PORT||3000,function (){
    console.log("the yelp camp server has start"); 
 });
